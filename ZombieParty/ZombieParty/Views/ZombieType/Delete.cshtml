@@ -4,7 +4,7 @@
         <div asp-validation-summary="ModelOnly" class="text-danger"></div>
         <input asp-for="@Model.Id" class="form-control" hidden />
         <div class="form-group row">
-            <h2 class="text-info pl-3">Zombie Type</h2>
+            <h2 class="text-info pl-3">@Langue["Title"]</h2>
             <hr />
         </div>
         <div class="row">
@@ -32,10 +32,10 @@
                 <div class="form-group row py-2">
                     <div class="col-8 offset-2 row">
                         <div class="col">
-                            <button type="submit" value="Delete" class="btn btn-danger w-100"><i class="fa-solid fa-trash-can"></i>&nbsp;Delete</button>
+                            <button type="submit" value="Delete" class="btn btn-danger w-100"><i class="fa-solid fa-trash-can"></i>&nbsp;@Langue["Delete"]button>
                         </div>
                         <div class="col">
-                            <a asp-action="Index" class="btn btn-secondary w-100"><i class="fa-solid fa-circle-arrow-left"></i>&nbsp;Back to list</a>
+                                <a asp-action="Index" class="btn btn-secondary w-100"><i class="fa-solid fa-circle-arrow-left"></i>&nbsp;@Langue["BackToList"]</a>
                         </div>
                     </div>
                 </div>
